@@ -1,0 +1,248 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 10px;
+    background-color: gainsboro;
+}
+
+.nav-wrapper {
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: rgb(10, 31, 32);
+    color: wheat;
+}
+.right-side{
+    display: flex;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white
+}
+
+.nav-link-wrapper a:hover {
+    color: wheat
+}
+
+.weather{
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+.newCities{
+    margin-top: 10px;
+    font-size: 1.5vmax;
+    border-radius: 4px;
+    box-shadow: -1px -1px 3px black;
+    padding-left: 1vmax;
+   
+}
+
+
+.oldCities{
+    margin-top: 10px;
+    font-size: 1vmax;
+    border-radius: 4px;
+    box-shadow: -1px -1px 3px black;
+    padding-left: 1vmax;
+}
+
+
+.oldCity{
+    box-shadow: 1px 1px 3px;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: rgb(171, 216, 235);
+    background-image: url("https://image.freepik.com/free-photo/blue-sky-with-cloud-clean-energy-power-clear-weather-background_43284-844.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.cityName {
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.condPic {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    cursor: pointer;
+
+    
+}
+
+
+.temp{
+    font-size: 15px;
+    font-weight: bold;
+    
+    color: rgb(9, 3, 10);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.cond{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    color: red;
+
+}
+
+.Add{
+    cursor: pointer;
+    color: #ecf0f1;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-top: 20px;    
+
+}
+
+.delete{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.click{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.newCity{
+    box-shadow: 1px 1px 3px;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-image: url("https://st2.depositphotos.com/4598939/8334/i/600/depositphotos_83344154-stock-photo-look-on-the-water-drops.jpg");    
+ 
+}
+
+.addRemove{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+#temperature{
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+#name{
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+}
+#condition{
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+}
+#conditionPic{
+    font-size: 20px;
+    font-weight: bold;
+    color: palevioletred;
+}
+
+
+.my-input{
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    grid-gap: 5px;
+}
+
+#cityName{
+    font-size:1.3em; 
+    padding:.5em;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+#btn{
+    cursor: pointer;
+    color: #ecf0f1;
+    background-color: #e74c3c;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-top: 20px;
+
+}
+
+.oldCity:hover {
+    background-color: rgb(113, 151, 155);
+}
+
+.newCity:hover {
+    background-color: rgb(113, 151, 155);
+}
+
+

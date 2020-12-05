@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
+         
+    <meta charset="UTF-8">
+
+    <title>weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper">
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='games'>Home</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='schedule'>about us</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>news</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>sport</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>reel</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>workLife</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>travel</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>future</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>workLife</div>
+            </div>
+            <div class="nav-link-wrapper">
+                <div class='news'>culture</div>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <div class="brand">
+                login
+            </div>
+            <div class="brand">
+                weathers
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class='my-input'>
+            <input type="text" id="cityName" placeholder="City">
+            <button id='btn' onclick="handleSearch()">SEARCH</button>
+
+
+              
+        </div>  
+
+
+
+    <div class='weather'> 
+          
+            
+        <script id="store-template-newCity" type="text/x-handlebars-template">
+              
+                <div class="newCity">
+                    <div class="cityName">{{name}}</div>
+                    <img class="condPic" src="icons/{{conditionPic}}.png">
+                    <div class="temp">{{temperature}}&deg;C</div>
+                    <div class='cond'>{{condition}}</div>   
+                    <div class="click"><button class="Add">Add</button></div>
+                
+              </div>  
+        </script>
+
+
+
+
+        <div class='newCities'>
+
+          
+        </div>
+
+
+        <script id="store-template-oldCity" type="text/x-handlebars-template">
+            {{#each oldCities}}    
+                    <div class="oldCity">
+                        <div data-close-button class="delete">&times;</div>
+                        <div class="cityName">{{name}}</div>
+                        <img class="condPic" src="{{conditionPic}}">
+                        <div class="temp">{{temperature}} &deg;C</div>
+                        <div class="cond">{{condition}}</div>      
+                  </div>  
+            {{/each}}    
+        </script>
+
+        <div class='oldCities'></div>
+
+    </div>
+
+
+
+    <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="./jquery/dist/jquery.js"></script>
+    <script src="Model.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
