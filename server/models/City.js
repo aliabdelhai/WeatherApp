@@ -8,6 +8,5 @@ const citySchema = new Schema({
     conditionPic: String
 })
 
-
 const City = mongoose.model("city", citySchema)
 module.exports = City
