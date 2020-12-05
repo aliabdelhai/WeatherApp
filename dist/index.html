@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!--Import Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Compiled and minified CSS -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-
-         
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>     
     <meta charset="UTF-8">
-
     <title>weather app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="nav-wrapper">
         <div class="left-side">
             <div class="nav-link-wrapper">
@@ -52,7 +42,6 @@
             <div class="nav-link-wrapper">
                 <div class='news'>culture</div>
             </div>
-
         </div>
 
         <div class="right-side">
@@ -69,10 +58,7 @@
 
         <div class='my-input'>
             <input type="text" id="cityName" placeholder="City">
-            <button id='btn' onclick="handleSearch()">SEARCH</button>
-
-
-              
+            <button id='btn' onclick="handleSearch()">SEARCH</button>      
         </div>  
 
 
@@ -92,13 +78,7 @@
               </div>  
         </script>
 
-
-
-
-        <div class='newCities'>
-
-          
-        </div>
+        <div class='newCities'></div>
 
 
         <script id="store-template-oldCity" type="text/x-handlebars-template">
@@ -116,8 +96,6 @@
         <div class='oldCities'></div>
 
     </div>
-
-
 
     <script src="./handlebars/dist/handlebars.js"></script>
     <script src="./jquery/dist/jquery.js"></script>

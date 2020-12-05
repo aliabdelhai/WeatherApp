@@ -6,10 +6,8 @@ class Model{
 
     async getDataFromDB(){
         await $.get('/cities', response => {
-            console.log(response)
             this.cityData = response
         })
-
     }
 
     async getCityData(cityName){
@@ -18,13 +16,11 @@ class Model{
         })
     }
 
-
     async saveCity(city){
         await $.post('/city', city, response => {
             this.cityData.push(response)
         })
     }
-
 
     async removeCity(cityName){
         await $.ajax({
@@ -32,13 +28,9 @@ class Model{
                 method: "DELETE",
                 success: (cityToDelete) => {
                     const name = cityToDelete.name
-                    console.log(this.cityData)
                     const index = this.cityData.findIndex(o => o.name === name)
-                    console.log(index)
                     if (index !== -1) this.cityData.splice(index, 1);    
                 }
             })
     }
-
-
 }
