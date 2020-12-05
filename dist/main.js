@@ -3,7 +3,6 @@ const render = new Renderer()
   
 const loadPage = async function(){
     await model.getDataFromDB()
-    console.log(model.cityData)
     render.renderDbData(model.cityData)
 }
 
