@@ -1,4 +1,3 @@
-
 class Model{
     constructor(){
         this.cityData = []
