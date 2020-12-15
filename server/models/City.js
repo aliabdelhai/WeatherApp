@@ -8,5 +8,5 @@ const citySchema = new Schema({
     conditionPic: String
 })
 
-const City = mongoose.model("city", citySchema)
+const City = mongoose.model("City", citySchema)
 module.exports = City
